@@ -1,0 +1,122 @@
+body {
+    min-height: 100vh;
+    font-family: sans-serif, Georgia, Times, 'Times New Roman';
+    margin: 0;
+    background-color: #0ea5e9;;
+}
+
+#container-hold {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-top {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.xo-container {
+    color: white;
+}
+
+#container {
+    display: none;
+    grid-template: repeat(3,120px)/repeat(3,120px);
+    margin-top: 20px;
+}
+
+#container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    outline: 2px solid white;
+    font-size: 7rem;
+}
+
+#open-screen {
+    display: flex;
+    max-height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+#name-input {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #bae6fd;
+    height: 200px;
+    padding: 80px;
+    gap: 20px; 
+    font-size: 2rem;
+    border: 5px white solid;
+}
+
+input[type="text"] {
+    border: white;
+    min-height: 20px;
+}
+
+#submitButton {
+    background-color:#d1d5db;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#submitButton:hover {
+    background-color: #6b7280;
+}
+
+#turn-response {
+    color: #083344;
+    font-size: 3rem;
+    margin-top: 3%;
+}
+
+#popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#popup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 30%;
+    height: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#winner-response {
+    font-size: 2rem;
+}
+
+#replay-btn {
+    background-color:#d1d5db;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <script src="tic-tac-toe.js" defer></script>
+
+    <div class = "title-top">Tic Tac Toe</div>
+
+    <div id="open-screen">
+        <form action="" id="name-input">
+            <label for="player-x-name">Player X Name</label>
+            <input type="text" id="player-x-name" name="player-x-name" placeholder= "Player X"  required>
+            <label for="player-o-name">Player O Name</label>
+            <input type="text" id="player-o-name" name="player-o-name" placeholder= "Player O"  required>
+            <button id="submitButton" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="container-hold">
+        <div id="turn-response"></div>
+
+        <div id="container">
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+            <div class="xo-container"></div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <div id="popup-content">
+            <div id="winner-response"></div>
+            <button id="replay-btn">Replay</button>
+        </div>
+    </div>
+</body>
+</html>
